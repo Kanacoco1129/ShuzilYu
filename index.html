@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f6f7">
+  <title>夢向 Meng Xiang｜櫛風沐雨，將會成炬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <button class="brand" type="button" data-page="首頁" aria-label="回首頁">
+      <span class="brand-seal">夢</span>
+      <span><b>夢向</b><small>MENG XIANG</small></span>
+    </button>
+
+    <button class="mobile-menu" id="mobileMenu" type="button" aria-expanded="false" aria-controls="nav">☰ 選單</button>
+
+    <nav class="nav" id="nav" aria-label="主要導覽">
+      <button class="nav-link active" type="button" data-page="首頁">首頁</button>
+      <button class="nav-link" type="button" data-page="自我介紹">自我介紹</button>
+      <button class="nav-link" type="button" data-page="介紹">夢向介紹</button>
+      <button class="nav-link" type="button" data-page="圖集">圖集</button>
+      <button class="nav-link" type="button" data-page="交友">劇情</button>
+      <button class="nav-link" type="button" data-page="聯絡">聯絡</button>
+    </nav>
+
+    <span class="header-note">ILLUSTRATION / PORTFOLIO</span>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="site-footer">
+    <div><span class="footer-seal">夢</span><span>夢向 / Meng Xiang</span></div>
+    <span>櫛風沐雨，將會成炬</span>
+    <span>© <span id="year"></span> · PERSONAL ART ARCHIVE</span>
+  </footer>
+
+  <div id="lightboxRoot"></div>
+
+  <div class="music-player">
+    <audio id="bgMusic" loop preload="metadata">
+      <source src="audio/background.wav" type="audio/wav">
+      你的瀏覽器不支援音訊播放。
+    </audio>
+    <button id="musicToggle" type="button" aria-pressed="false">♫ 播放音樂</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
