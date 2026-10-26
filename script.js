@@ -1,12 +1,12 @@
 // =====================================================
-// 夢向 Meng Xiang 個人網站
+// 夢向 SANEMI 個人網站
 // 請把這份內容單獨存成 script.js，不要貼進 index.html 或 style.css
 // =====================================================
 
 // ===== 網站文字設定 =====
 const site = {
   name: "夢向",
-  latinName: "Meng Xiang",
+  latinName: "SANEMI",
   motto: "櫛風沐雨，將會成炬",
   role: "實彌 / 雛菊",
   introduction: "其實平平淡淡也沒什麼不好，應該說那才是我們所追求的"
@@ -14,15 +14,21 @@ const site = {
 
 // ===== 作品設定：圖片需放在 img 資料夾 =====
 const artworks = [
-  { title: "一周年紀念日", subtitle: "繪師：醒醒", year: "2026", category: "紀念", image: "img/一周年.jpg", note: "一周年也請您繼續留在我的身邊吧" },
-  { title: "雛菊生日賀圖", subtitle: "繪師：果果", year: "2026", category: "慶生", image: "img/2026雛菊生日.png", note: "1/24生日的我只希望24小時中你有1小時屬於我" },
-  { title: "實彌生日賀圖", subtitle: "繪師：果果", year: "2025", category: "慶生", image: "img/2025實彌生日圖.png", note: "你說，翩翩起舞的我們會是今晚舞會的焦點嗎？" },
-  { title: "女僕vs執事", subtitle: "繪師：巧克咖哩", year: "2026", category: "日常", image: "img/女僕vs執事.jpg", note: "實彌你身上有貓咪好可愛" },
-  { title: "水手服", subtitle: "繪師：SH", year: "2026", category: "日常", image: "img/水手服.png", note: "不准對我擺著學姊的架子" },
-  { title: "平安夜的小動物", subtitle: "繪師：小兔", year: "2025", category: "節日", image: "img/動物化.jpg", note: "希望明年也是平安的一年" },
-  { title: "聖誕節", subtitle: "繪師：果果", year: "2025", category: "節日", image: "img/2025聖誕節.png", note: "拜託妳以後還是別進廚房了" },
-  { title: "鬼滅學園AU", subtitle: "繪師：果果", year: "2025", category: "AU", image: "img/鬼滅學園AU.png", note: "除了微積分以外妳腦子都還可以，這是針對我了吧" },
-  { title: "百日", subtitle: "自繪", year: "2025", category: "紀念", image: "img/百日.png", note: "就說了接吻時把妳的眼睛閉上" }
+  { title: "一周年紀念日", subtitle: "繪師：醒醒", year: "2026/10/02", category: "紀念", image: "img/一周年.jpg", note: "一周年也請您繼續留在我的身邊吧" },
+  { title: "雛菊生日賀圖", subtitle: "繪師：果果", year: "2026/01/24", category: "慶生", image: "img/2026雛菊生日.png", note: "1/24生日的我只希望24小時中你有1小時屬於我" },
+  { title: "實彌生日賀圖", subtitle: "繪師：果果", year: "2025/11/29", category: "慶生", image: "img/2025實彌生日圖.png", note: "你說，翩翩起舞的我們會是今晚舞會的焦點嗎？" },
+  { title: "女僕日", subtitle: "繪師：巧克咖哩", year: "2026/05/10", category: "節日", image: "img/女僕vs執事.jpg", note: "實彌,你身上有貓咪好可愛" },
+  { title: "兒童節", subtitle: "繪師：SH", year: "2026/05/05", category: "節日", image: "img/水手服.png", note: "不准對我擺著學姊的架子" },
+  { title: "平安夜的小動物", subtitle: "繪師：小兔", year: "2025/12/24", category: "節日", image: "img/動物化.jpg", note: "希望明年也是平安的一年" },
+  { title: "鬼滅學園AU", subtitle: "繪師：果果", year: "2026/04/23", category: "AU", image: "img/鬼滅學園AU.png", note: "除了微積分以外妳腦子都還可以，這是針對我了吧" },
+  { title: "聖誕節", subtitle: "繪師：果果", year: "2025/12/25", category: "節日", image: "img/2025聖誕節.png", note: "拜託妳以後還是別進廚房了" },
+  { title: "百日", subtitle: "自繪", year: "2026/01/10", category: "節日", image: "img/百日.png", note: "就說了妳接吻時能不能把眼睛閉上" },
+  { title: "貓貓日", subtitle: "自繪", year: "2026/02/22", category: "節日", image: "img/2026貓貓日.png", note: "我要工作，你先起來好不好?" },
+  { title: "情人節", subtitle: "繪師：星空薄荷茶", year: "2026/02/14", category: "節日", image: "img/情人節.png", note: "唉呀情人情快樂啊這位先生，要當我的情人嗎?" },
+  { title: "白色情人節", subtitle: "繪師：小柚", year: "2026/03/14", category: "節日", image: "img/白色情人節.jpg", note: "我說妳一定要這樣嗎?說好只是吃巧克力的吧!" },
+  { title: "他的新婚", subtitle: "繪師：ルート", year: "2026/02/23", category: "離別", image: "img/離別.jpg", note: "希望那個人可以給你幸福" },
+  { title: "玩雪", subtitle: "繪師：afnk", year: "2025/12/25", category: "日常", image: "img/夢圖轉蛋5.png", note: "就只是下雪而已，需要那麼開心嗎?" },
+  { title: "星星墜落", subtitle: "繪師：果果", year: "2026/03/14", category: "節日", image: "img/夢圖轉蛋4.jpg", note: "實彌你看，我可以為你摘下天上的星星喔" }
 ];
 
 const pageTitles = {
@@ -76,7 +82,7 @@ function heroMarkup() {
     <section class="hero">
       <div class="hero-copy">
         <p class="kicker">${site.role} · PERSONAL ARCHIVE</p>
-        <p class="hero-index">圖集　/　${new Date().getFullYear()}</p>
+        <p class="hero-index">背景音樂:露米亞　/　${new Date().getFullYear()}</p>
         <h1>${site.name}<br><em>踏雪留跡，我能否也在你心裡留下點痕跡</em></h1>
         <p class="hero-motto">${site.motto}</p>
         <p class="hero-description">${site.introduction}</p>
